@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gift For You 💝</title>
+
+<style>
+
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  height:100vh;
+  background:linear-gradient(135deg,#ff6fa1,#ff9ecb);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+.container{
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(12px);
+  padding:50px 40px;
+  border-radius:25px;
+  text-align:center;
+  width:90%;
+  max-width:420px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.25);
+  color:white;
+  z-index:2;
+  position:relative;
+}
+
+.main-heart{
+  font-size:50px;
+  animation:beat 1s infinite;
+  margin-bottom:15px;
+}
+
+@keyframes beat{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+h1{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+p{
+  font-size:18px;
+  margin-bottom:30px;
+  opacity:0.9;
+}
+
+button{
+  background:#ff2f7d;
+  border:none;
+  padding:14px 40px;
+  font-size:18px;
+  border-radius:30px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:hover{
+  background:#ff0f68;
+  transform:scale(1.08);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+
+<!-- Main Card -->
+<div class="container">
+
+ <img src="https://i.pinimg.com/originals/0d/8c/66/0d8c66adf9434bad72a680e7e53f9967.gif" width="200">
+
+  <p>Please aisa mat karo ek baar firse soch lo 💕</p>
+
+  <button onclick="goNext()">YES</button>
+
+  <a href="h.html"><button onclick="goNext()">NO</button></a>
+
+</div>
+
+<script>
+
+function goNext(){
+  window.location.href = "song.html";
+}
+
+</script>
+
+</body>
+</html>

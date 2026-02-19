@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Only For You 💖</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  height:100vh;
+  background:linear-gradient(135deg,#ff5f9e,#ff9acb);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+/* Floating Hearts */
+.heart{
+  position:absolute;
+  font-size:24px;
+  animation:float 6s linear infinite;
+  opacity:0.7;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-10vh);}
+}
+
+.h1{left:15%;animation-delay:0s;}
+.h2{left:35%;animation-delay:2s;}
+.h3{left:60%;animation-delay:4s;}
+.h4{left:80%;animation-delay:1s;}
+
+/* Main Box */
+.container{
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(12px);
+  padding:50px 35px;
+  border-radius:25px;
+  text-align:center;
+  width:90%;
+  max-width:450px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.25);
+  color:white;
+  z-index:2;
+}
+
+h1{
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+.lyrics{
+  font-size:24px;
+  line-height:1.8;
+  min-height:120px;
+  font-weight:600;
+  animation:fade 0.6s ease;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(15px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+   
+
+<!-- Hearts -->
+<div class="heart h1">💖</div>
+<div class="heart h2">💕</div>
+<div class="heart h3">💗</div>
+<div class="heart h4">💘</div>
+
+<!-- Main -->
+<div class="container">
+
+  <img src="data:image/png;base64,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" width="200">
+
+  <h1>Only For You 💝</h1>
+
+  <div class="lyrics" id="lyrics">
+    💗 Wait for magic...
+  </div>
+
+</div>
+
+<!-- Hidden Audio -->
+<audio id="song" src="WhatsApp Audio 2026-02-13 at 7.35.02 PM.mpeg"></audio>
+
+<script>
+
+const song = document.getElementById("song");
+const lyricsBox = document.getElementById("lyrics");
+
+/* Updated Synced Lyrics */
+const timedLyrics = [
+
+  
+  { text:"Ik-Ik kare kyun taare gine 💖", time:0 },
+
+  { text:"Kyun maane kaha hum qismat ka 😍", time:5},
+
+  { text:"3600 sun milaye kyun gun 💕", time:10},
+
+  { text:"kyun joda banaye janmon ka 💗", time:15},
+
+  { text:"Chal tere mere iss qisse ka sikka uchhalein 💗", time:20 },
+
+  { text:" Hoon chit main teri hai patt tu mere hawale 💕", time:25},
+
+  { text:" Chal tere mere iss qisse ka sikka uchhalein 💗💖 ", time:30 },
+
+  { text:" Hoon chit main teri hai patt tu mere hawale 💕💕", time: 36},
+
+  { text:"Kehta hai kya tere jiya💗", time:42},
+
+  { text:"Bolo piya haan ke haan 💗💖", time:46},
+
+  { text:"Haan ke haan, Haan ke haan💗", time:48 },
+
+
+];
+
+let index = 0;
+
+/* Auto Play After Page Load */
+window.onload = () => {
+
+  song.play().catch(()=>{
+    lyricsBox.innerText="▶️ Tap anywhere to start...";
+  });
+
+};
+
+/* If autoplay blocked */
+document.body.addEventListener("click",()=>{
+  song.play();
+});
+
+
+song.addEventListener("timeupdate",()=>{
+
+  if(index < timedLyrics.length){
+
+    if(song.currentTime >= timedLyrics[index].time){
+
+      lyricsBox.innerText = timedLyrics[index].text;
+
+      lyricsBox.style.animation="none";
+      lyricsBox.offsetHeight;
+      lyricsBox.style.animation="fade 0.8s ease";
+
+      index++;
+
+    }
+  }
+
+});
+
+</script>
+
+</body>
+</html>

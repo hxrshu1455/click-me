@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gift For You 💝</title>
+
+<style>
+
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  height:100vh;
+  background:linear-gradient(135deg,#ff6fa1,#ff9ecb);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+.container{
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(12px);
+  padding:50px 40px;
+  border-radius:25px;
+  text-align:center;
+  width:90%;
+  max-width:420px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.25);
+  color:white;
+  z-index:2;
+  position:relative;
+}
+
+.main-heart{
+  font-size:50px;
+  animation:beat 1s infinite;
+  margin-bottom:15px;
+}
+
+@keyframes beat{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+h1{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+p{
+  font-size:18px;
+  margin-bottom:30px;
+  opacity:0.9;
+}
+
+.bt1{
+  background:#ff2f7d;
+  border:none;
+  padding:14px 40px;
+  font-size:18px;
+  border-radius:30px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.bt1:hover{
+  background:#ff0f68;
+  transform:scale(1.08);
+}
+
+.no-btn{
+  background:#ff2f7d;
+  border:none;
+  padding:14px 40px;
+  font-size:18px;
+  border-radius:30px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  position: absolute;
+}
+.no-btn:hover{
+  background:#ff0f68;
+  transform:scale(1.08);
+  margin-right: 80px;
+
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+
+<!-- Main Card -->
+<div class="container">
+
+  <img src="https://i.pinimg.com/originals/d4/24/84/d424842c4be2dfec4db08e4342909a2b.gif"  width="200">
+
+  
+
+  <p>
+    <br>maan jao yaar please.....</p>
+
+  <button class ="bt1" onclick="goNext()">YES</button>
+
+  <button class ="no-btn " onclick="goNext()">NO</button>
+
+</div>
+
+<script>
+  const nobtn=document.querySelector(".no-btn");
+  const questionContainer=document.querySelector(".container");
+  nobtn.addEventListener("mouseover",()=>
+{
+  const newX=Math.floor(Math.random()*questionContainer.offsetWidth);
+  const newY=Math.floor(Math.random()*questionContainer.offsetHeight);
+
+  nobtn.style.left=newX+"px";
+   nobtn.style.top=newY+"px";
+});
+
+
+function goNext(){
+  window.location.href = "song.html";
+
+}
+
+</script>
+
+</body>
+</html>
